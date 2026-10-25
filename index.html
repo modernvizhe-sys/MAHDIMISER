@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0e">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="MAHDIMISER | دنیای تاریک؛ آرشیوی از افسانه‌ها، پرونده‌های مرموز، مکان‌های عجیب و روایت‌های ناشناخته.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:title" content="MAHDIMISER | دنیای تاریک">
+  <meta property="og:description" content="اینجا، هیچ تاریکی بی‌دلیل نیست.">
+  <title>MAHDIMISER | دنیای تاریک</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0e'/%3E%3Cpath d='M14 46V18l18 19 18-19v28' fill='none' stroke='%23f14755' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+:root{--bg:#09090b;--surface:#111115;--surface-2:#17171c;--line:#29292f;--ink:#f7f3f1;--muted:#99969b;--soft:#c7c1c2;--red:#ef4553;--red-soft:#a52d3b;--red-deep:#4b131d;--container:1210px;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;overflow-x:clip}
+body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,Arial,sans-serif;line-height:1.9;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);background-size:62px 62px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+::selection{color:#fff;background:#a62839}
+button,input{font:inherit}button{cursor:pointer}
+a{color:inherit;text-decoration:none}a,button,input{ -webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid #ff6675;outline-offset:4px}
+img,svg{max-width:100%}
+.container{width:min(var(--container),calc(100% - 92px));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link{position:fixed;z-index:99;right:15px;top:-90px;padding:8px 16px;background:var(--red);color:#fff;border-radius:8px}.skip-link:focus{top:15px}
+.ambient{position:absolute;z-index:-2;pointer-events:none;border-radius:50%;filter:blur(100px);opacity:.27}
+.ambient--one{top:160px;left:-260px;width:600px;height:500px;background:radial-gradient(ellipse,#741927,transparent 66%)}
+.ambient--two{top:980px;right:-250px;width:500px;height:600px;background:radial-gradient(ellipse,#421620,transparent 66%)}
+/* NAVIGATION */
+.site-header{height:92px;position:relative;z-index:40;border-bottom:1px solid rgba(255,255,255,.065);background:rgba(9,9,11,.78);backdrop-filter:blur(18px)}
+@supports(backdrop-filter:blur(10px)){.site-header{position:sticky;top:0}}
+.nav-wrap{height:100%;display:flex;gap:36px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;white-space:nowrap;direction:ltr}
+.brand-symbol{width:42px;height:42px;display:grid;place-items:center;border:1px solid #6c2630;position:relative;transform:rotate(45deg);flex-shrink:0}
+.brand-symbol:before{content:"";position:absolute;inset:5px;border:1px solid rgba(239,69,83,.17)}
+.brand-symbol span{height:17px;width:17px;display:block;transform:rotate(-45deg);border-top:4px solid var(--red);border-left:4px solid var(--red);border-right:4px solid var(--red);clip-path:polygon(0 0,100% 0,100% 100%,80% 100%,80% 40%,50% 86%,20% 40%,20% 100%,0 100%)}
+.brand-copy{display:flex;flex-direction:column;gap:1px;line-height:1.2;letter-spacing:1.4px}.brand-copy b{font-family:Arial,sans-serif;font-weight:900;font-size:17px}.brand-copy small{color:#8a8589;font:9px Arial,sans-serif;letter-spacing:3.1px;margin-top:7px}
+.main-nav{display:flex;align-items:center;gap:29px}.nav-link{font-size:13px;color:#aaa5a8;transition:color .25s;position:relative}.nav-link:hover,.nav-link.active{color:#fff}.nav-link.active:after{position:absolute;content:"";height:3px;width:12px;border-radius:10px;background:var(--red);bottom:-13px;right:calc(50% - 6px)}
+.nav-cta{display:flex;align-items:center;gap:15px;padding:9px 16px 10px;border:1px solid #4a3035;font-size:12px;border-radius:2px;white-space:nowrap;transition:.25s}.nav-cta:hover{background:#211217;border-color:var(--red)}.nav-cta span:last-child{color:var(--red);font-size:17px}
+.menu-toggle{display:none;background:transparent;border:1px solid #343036;height:41px;width:43px;border-radius:4px;align-items:center;justify-content:center;flex-direction:column;gap:5px}.menu-toggle span{width:19px;height:1.5px;background:#fff;transition:.25s}
+/* HERO */
+.hero{min-height:700px;padding-block:102px 100px;position:relative;display:grid;grid-template-columns:1fr .93fr;gap:64px;align-items:center}
+.hero-copy{position:relative;z-index:2;padding-bottom:5px}.eyebrow,.section-eyebrow{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--soft);font-weight:500}.eyebrow{color:#cebec1}.pulse-dot,.tiny-red-dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px rgba(239,69,83,.65);display:inline-block;flex:0 0 auto}.eyebrow-separator{margin-inline:8px;color:#645359}
+.hero-kicker{color:#e55362;font:700 11px Arial,sans-serif;letter-spacing:5px;margin:26px 0 15px;text-align:right;direction:ltr}
+h1,h2,h3,p{margin-block-start:0}.hero h1{font-size:clamp(46px,5vw,81px);line-height:1.27;letter-spacing:-3.2px;font-weight:900;margin:0 0 26px;white-space:nowrap}.hero h1 em,.section-heading em,.manifesto-inner em,.about-text em,.connect-inner em{color:var(--red);font-style:normal}.outlined-word{color:transparent;-webkit-text-stroke:1px #ece1e4;text-shadow:none}.hero-period{color:var(--red)}
+.hero-description{max-width:505px;color:#b2abad;font-size:15.5px;line-height:2.3;margin-bottom:32px}.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:30px;padding:13px 22px;border-radius:3px;font-size:13px;font-weight:700;border:1px solid transparent;transition:transform .28s var(--ease),background .2s,border-color .2s}.button:hover{transform:translateY(-3px)}.button--primary{background:var(--red);color:#1a0709;box-shadow:0 8px 32px rgba(196,37,57,.24)}.button--primary:hover{background:#ff6874}.button--primary svg{width:17px;stroke:currentColor;fill:none;stroke-width:1.8;transform:rotate(180deg)}.button--outline{color:#fff;border-color:#5a323a;background:#211317}.button--outline:hover{border-color:var(--red)}.text-link{font-size:13px;font-weight:600;border-bottom:1px solid #6b373e;padding-bottom:7px}.text-link span{color:var(--red);margin-right:6px}
+.hero-metrics{display:flex;gap:27px;align-items:center;margin-top:59px}.hero-metrics>div:not(.metrics-caption){display:flex;flex-direction:column;gap:3px}.hero-metrics strong{font-family:Arial,Vazirmatn,sans-serif;font-size:32px;line-height:1.15;letter-spacing:1px}.hero-metrics span:not(.tiny-red-dot){color:#959096;font-size:11.5px}.metric-rule{height:31px;width:1px;background:#3b2c30}.metrics-caption{font-size:10px;max-width:125px;color:#b9a9ac;line-height:1.8;display:flex;align-items:center;gap:8px}.metrics-caption .tiny-red-dot{width:5px;height:5px}
+/* A CSS-ONLY CINEMATIC PORTAL: no external image assets */
+.hero-art{height:550px;isolation:isolate;overflow:hidden;border:1px solid rgba(239,69,83,.16);position:relative;background:radial-gradient(ellipse at 50% 60%,#531320 0%,#2a1019 18%,#100b10 45%,#07080b 77%),repeating-linear-gradient(0deg,transparent 0px,transparent 3px,rgba(255,255,255,.02) 4px);box-shadow:0 30px 100px rgba(0,0,0,.4),inset 0 0 70px rgba(0,0,0,.8)}
+.hero-art:before{content:"";position:absolute;inset:0;z-index:12;background-image:linear-gradient(to bottom,rgba(0,0,0,.1),transparent 30%,rgba(0,0,0,.25)),repeating-linear-gradient(0deg,transparent 0px,transparent 4px,rgba(0,0,0,.15) 5px);pointer-events:none}
+.hero-art:after{content:"";position:absolute;inset:-100%;z-index:10;pointer-events:none;background:conic-gradient(from 0deg at 50% 50%,transparent 0%,rgba(210,35,59,.07) 6%,transparent 15%);animation:radar 22s linear infinite}.orbit{position:absolute;top:49%;left:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,164,174,.12)}.orbit--outer{height:460px;width:460px;border-style:dashed;animation:orbit 95s linear infinite}.orbit--middle{height:365px;width:365px;border-color:rgba(243,58,76,.18);box-shadow:0 0 35px rgba(237,54,77,.1)}.orbit--inner{height:278px;width:278px;border-color:rgba(244,91,104,.19);border-style:dashed;animation:orbit 75s linear infinite reverse}.radial-ticks{position:absolute;top:49%;left:50%;width:510px;height:510px;transform:translate(-50%,-50%);border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(255,146,158,.2) 0deg 0.22deg,transparent 0.22deg 15deg);mask:radial-gradient(transparent 67%,#000 68%,#000 68.5%,transparent 69%)}.art-halo{position:absolute;inset:17% 14% 8%;border-radius:50%;background:radial-gradient(ellipse,#f4314e3b,transparent 60%);filter:blur(35px)}
+.art-gate{position:absolute;top:15%;left:50%;height:69%;width:45%;max-width:245px;transform:translateX(-50%);border:12px solid #050407;border-bottom:0;border-radius:145px 145px 0 0;box-shadow:0 0 0 2px #932b3a,0 0 0 12px #09070a,0 0 0 14px #4e1722,0 0 40px 17px rgba(246,38,67,.22),inset 0 0 30px 10px rgba(238,39,64,.6);background:linear-gradient(to bottom,#0b0308 0%,#16050b 20%,#dd2c46 96%);overflow:hidden;z-index:3}
+.art-gate:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(0,0,0,.12) 0 2px,transparent 2px 9px),linear-gradient(to bottom,transparent 50%,rgba(255,36,64,.6));mix-blend-mode:multiply}.gate-light{position:absolute;bottom:-12%;left:50%;transform:translateX(-50%);height:70%;width:70%;background:radial-gradient(ellipse at 50% 80%,#ff7487,rgba(255,43,76,.8) 36%,transparent 74%);filter:blur(23px)}.gate-core{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);width:40%;height:70%;background:linear-gradient(to top,rgba(255,142,155,.8),transparent);filter:blur(30px)}
+.art-ground{position:absolute;z-index:4;inset:65% -30% -35%;transform:perspective(130px) rotateX(44deg);background:repeating-linear-gradient(0deg,transparent 0 28px,rgba(249,82,105,.14) 29px),repeating-linear-gradient(90deg,transparent 0 46px,rgba(249,82,105,.12) 47px);mask-image:linear-gradient(to bottom,transparent 2%,#000 45%)}.art-horizon{position:absolute;top:78%;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#e73c58,transparent);box-shadow:0 0 30px 4px #de2b48;opacity:.75;z-index:6}.art-line{position:absolute;z-index:3;background:linear-gradient(90deg,transparent,rgba(240,91,113,.44),transparent);height:1px;transform:rotate(-25deg)}.art-line--one{width:80%;left:4%;top:27%}.art-line--two{width:65%;left:29%;top:69%;transform:rotate(18deg)}
+.art-corner{position:absolute;z-index:15;color:#aa8087;font:10px/1.7 monospace;letter-spacing:1.3px;direction:ltr}.art-corner--tl{top:21px;left:21px}.art-corner--tr{top:21px;right:21px;text-align:right}.art-corner--bl{bottom:50px;left:21px}.art-corner--br{bottom:50px;right:21px;color:#e45868}.art-center-label{position:absolute;z-index:13;left:0;right:0;bottom:18%;text-align:center;color:#ffe3e7;font:10px Arial,sans-serif;letter-spacing:5px;direction:ltr;text-shadow:0 0 15px #fa3856}.art-bottom{position:absolute;z-index:15;bottom:0;left:0;right:0;padding:9px 21px;display:flex;justify-content:space-between;direction:ltr;border-top:1px solid rgba(244,91,104,.18);background:rgba(4,5,8,.66);color:#96777d;font:9px monospace;letter-spacing:2px}
+.scroll-hint{position:absolute;bottom:26px;right:0;display:flex;align-items:center;gap:14px;color:#777076;font-size:10px}.scroll-line{width:32px;height:1px;background:var(--red)}
+/* CATEGORY TICKER */
+.ticker{height:59px;border-top:1px solid #272128;border-bottom:1px solid #272128;overflow:hidden;display:flex;align-items:center;background:#111013}.ticker-track{display:flex;align-items:center;gap:30px;white-space:nowrap;width:max-content;animation:marquee 45s linear infinite}.ticker-track span{font-size:11px;letter-spacing:.2px;color:#a6a0a4}.ticker-track i{color:var(--red);font-size:11px;font-style:normal}
+/* SHARED SECTIONS */
+.section-space{padding-block:122px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section-eyebrow{font:600 11px Arial,Vazirmatn,sans-serif;letter-spacing:2.4px;direction:ltr;justify-content:flex-end;color:#9c969a;margin:0 0 15px}.section-eyebrow span{color:var(--red)}.section-heading .section-eyebrow,.about-text .section-eyebrow,.connect-inner .section-eyebrow{justify-content:flex-start;direction:ltr}.section-heading h2,.about-text h2,.connect-inner h2{font-size:clamp(30px,3.7vw,52px);line-height:1.4;font-weight:900;letter-spacing:-1.3px;margin-bottom:8px}.section-subtitle{font-size:13px;color:#ada7ab;margin:0}.section-serial{direction:ltr;color:#30282c;font:900 47px/0.9 Arial,sans-serif;letter-spacing:2px;display:flex;align-items:end;gap:11px}.section-serial span{color:var(--red);font-size:26px;font-weight:400;align-self:end;margin-bottom:4px}
+.archive-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:38px 0 20px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter-button{background:transparent;color:#a7a0a5;border:1px solid #393239;white-space:nowrap;padding:9px 15px;font-size:12px;border-radius:3px;transition:.2s}.filter-button:hover{border-color:#7d3b47;color:#fff}.filter-button[aria-pressed="true"]{background:#c33245;border-color:#c33245;color:#fff}.search-field{display:flex;align-items:center;gap:10px;background:#111014;border:1px solid #383139;padding:0 13px;height:44px;width:275px;flex:0 0 275px;border-radius:3px}.search-field:focus-within{border-color:#bd4050}.search-field svg{width:16px;stroke:#928b91;stroke-width:1.9;fill:none;flex:0 0 auto}.search-field input{color:#f7f4f5;background:transparent;border:0;outline:0;width:100%;font-size:12px}.search-field input::placeholder{color:#827982}.search-field input::-webkit-search-cancel-button{cursor:pointer;filter:grayscale(1) invert(1)}.archive-status{font-size:11px;color:#928890;margin:0 0 18px}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}.case-card{position:relative;border:1px solid #2c282e;background:#111014;min-width:0;overflow:hidden;transition:border-color .3s,transform .3s var(--ease),box-shadow .3s}.case-card:hover{transform:translateY(-6px);border-color:#763341;box-shadow:0 20px 40px rgba(0,0,0,.32)}.case-visual{height:203px;position:relative;overflow:hidden;background:var(--card-gradient,linear-gradient(125deg,#211016,#07080b));isolation:isolate}.case-visual:before{position:absolute;content:"";inset:0;background:radial-gradient(circle at 50% 100%,rgba(255,255,255,.08),transparent 55%),repeating-linear-gradient(90deg,transparent 0 17px,rgba(255,255,255,.008) 18px);z-index:1}.case-visual:after{position:absolute;content:"";height:140%;width:46%;background:linear-gradient(to right,transparent,rgba(255,255,255,.035),transparent);top:-20%;left:-70%;transform:rotate(20deg);z-index:2;transition:left .8s var(--ease)}.case-card:hover .case-visual:after{left:130%}.case-icon{position:absolute;left:50%;top:50%;transform:translate(-50%,-49%);width:134px;height:134px;filter:drop-shadow(0 0 22px var(--card-glow,rgba(239,69,83,.28)));opacity:.94}.case-icon svg{width:100%;height:100%;fill:none;stroke:#de6673;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}.case-num{position:absolute;z-index:4;top:14px;right:17px;color:#dab4ba;font:11px Arial,sans-serif;letter-spacing:2px}.case-type{position:absolute;z-index:4;bottom:15px;left:17px;border:1px solid #7d454c;background:#210e14c7;color:#f4c3c8;padding:3px 9px;font-size:10px;border-radius:2px}.case-visual-grid{position:absolute;inset:15px;z-index:3;border:1px solid rgba(255,255,255,.085);pointer-events:none}.case-content{padding:24px 23px 20px}.case-meta{font:700 10px Arial,Vazirmatn,sans-serif;color:#a65a66;letter-spacing:1.3px;margin-bottom:8px}.case-content h3{font-weight:800;font-size:17px;line-height:1.8;margin:0 0 10px;min-height:31px}.case-content p{font-size:12.5px;color:#a39ca2;line-height:2.15;min-height:78px;margin-bottom:18px}.case-open{display:inline-flex;gap:12px;align-items:center;color:#eee4e6;padding:0 0 6px;background:none;border:0;border-bottom:1px solid #603039;font-size:12px;font-weight:700}.case-open span{color:var(--red);font-size:16px;transition:transform .2s}.case-open:hover span{transform:translateX(-4px)}.sample-note{font-size:11.5px;color:#7f777e;margin:30px 0 0;text-align:center}.sample-note span{color:var(--red);margin-left:5px}.empty-state{text-align:center;border:1px dashed #4a3038;padding:45px 20px;color:#aaa0a4}.empty-state[hidden]{display:none}.empty-mark{font:70px Arial,sans-serif;color:#9f303e;line-height:1}.empty-state h3{color:#fff;margin:13px 0 2px}.empty-state p{font-size:13px}.empty-state button{margin-top:15px}
+/* MANIFESTO */
+.manifesto-section{background:radial-gradient(ellipse at 50% 20%,rgba(107,23,37,.34),transparent 60%),linear-gradient(135deg,#151015,#09090b 65%);border-block:1px solid #271a22;position:relative;overflow:hidden}.manifesto-section:before,.manifesto-section:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(231,51,71,.08);transform:rotate(45deg);top:10%;left:-180px}.manifesto-section:after{width:310px;height:310px;left:auto;right:-180px;top:35%}.manifesto-inner{padding-block:100px 108px;text-align:center;position:relative}.manifesto-inner .section-eyebrow{justify-content:center}.manifesto-icon{font:130px Georgia,serif;color:#852735;line-height:.65;margin-bottom:20px}.manifesto-inner h2{font-size:clamp(34px,5vw,67px);line-height:1.55;font-weight:900;letter-spacing:-1.2px;margin:18px 0}.manifesto-inner>p:not(.section-eyebrow){max-width:580px;margin:0 auto;color:#afa1a5;font-size:14px;line-height:2.25}.manifesto-signature{margin-top:35px;font:11px Arial,sans-serif;color:#7d6f74;letter-spacing:3.5px;direction:ltr}.manifesto-signature span{color:var(--red);margin-inline:5px}
+/* ABOUT */
+.about-section{display:grid;grid-template-columns:.87fr 1fr;gap:100px;align-items:center}.about-image{min-height:450px;border:1px solid #37252c;background:radial-gradient(ellipse at 50% 57%,#481824 0%,#1b1117 30%,#0c0c10 69%);position:relative;overflow:hidden;display:grid;place-items:center}.about-image:before{position:absolute;content:"";inset:14px;border:1px solid #4a202c}.about-image:after{content:"";position:absolute;bottom:-20%;left:10%;right:10%;height:60%;background:radial-gradient(ellipse,rgba(240,34,65,.18),transparent 68%);filter:blur(30px)}.portrait-ring{width:280px;height:280px;border-radius:50%;border:1px solid #853441;position:absolute}.portrait-ring--two{width:346px;height:346px;border:1px dashed #4d2730}.portrait-monogram{font:900 175px Arial,sans-serif;z-index:2;color:transparent;-webkit-text-stroke:2px #f35b6b;text-shadow:0 0 50px rgba(233,48,78,.2);letter-spacing:-15px;padding-right:15px}.portrait-monogram span{color:var(--red);-webkit-text-stroke:0}.portrait-caption{position:absolute;bottom:24px;left:0;right:0;text-align:center;font:10px Arial,sans-serif;color:#c18f98;letter-spacing:4px;direction:ltr}.portrait-cross{position:absolute;top:24px;right:27px;color:var(--red);font-size:30px;line-height:1}.about-text h2{margin-bottom:22px}.about-text>p:not(.section-eyebrow){color:#b5aaaf;font-size:14px;line-height:2.4;margin-bottom:20px}.about-link{display:inline-block;margin-top:8px}
+/* SOCIAL */
+.connect-section{position:relative;border-block:1px solid #39212c;background:linear-gradient(110deg,#2b111b,#0d0a0e 62%)}.connect-inner{display:flex;align-items:center;justify-content:space-between;gap:45px;padding-block:65px}.connect-inner h2{margin-bottom:8px}.connect-inner p:not(.section-eyebrow){color:#b4a5aa;font-size:13px;margin:0}.social-links{display:flex;gap:12px;flex-wrap:wrap;max-width:515px;justify-content:flex-end}.social-button{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:15px 19px;min-width:165px;border:1px solid #79414c;background:#221117;color:#fff;transition:.2s;font:700 12px Vazirmatn,sans-serif}.social-button:hover{border-color:var(--red);background:#35141e}.social-button b{font:700 14px Arial,sans-serif;direction:ltr}.social-button span{font-size:10px;color:var(--red)}.social-pending{color:#917f86;border:1px dashed #54333d;padding:16px 22px;font-size:12px;max-width:290px}
+/* FOOTER */
+.site-footer{background:#08080a}.footer-inner{min-height:108px;display:flex;justify-content:space-between;align-items:center;gap:18px}.footer-brand{display:flex;align-items:center;gap:14px;font:800 12px Arial,sans-serif;direction:ltr}.brand-symbol--small{width:27px;height:27px}.brand-symbol--small span{transform:rotate(-45deg) scale(.65)}.footer-brand small{font:11px Vazirmatn,sans-serif;color:#83777c}.footer-inner p{font-size:12px;color:#a99ca1;margin:0}.footer-copy{font:10px Arial,sans-serif;color:#767077;white-space:nowrap;direction:ltr}
+/* CASE MODAL */
+.case-dialog{border:1px solid #65333d;color:var(--ink);background:#101013;max-width:min(550px,calc(100% - 30px));width:100%;max-height:min(90dvh,850px);padding:0;border-radius:5px;box-shadow:0 20px 100px #000b;overflow:auto}.case-dialog::backdrop{background:rgba(0,0,0,.79);backdrop-filter:blur(6px)}.dialog-top{position:absolute;top:0;z-index:4;right:0;left:0;display:flex;justify-content:space-between;align-items:center;direction:ltr;padding:14px 16px}.dialog-overline{color:#c99ba4;font:9px Arial,sans-serif;letter-spacing:2px}.dialog-close{display:grid;place-items:center;width:33px;height:33px;font-size:27px;color:#fff;background:#190a0e;border:1px solid #70343f;line-height:1}.dialog-close:hover{background:#70343f}.dialog-visual{height:200px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#481b27,#100d13 75%);border-bottom:1px solid #4b2830}.dialog-visual-icon{width:125px;height:125px;display:block}.dialog-visual-icon svg{height:100%;width:100%;stroke:#ea7381;fill:none;stroke-width:1.5;filter:drop-shadow(0 0 15px rgba(249,60,90,.5))}.dialog-body{padding:27px 31px 30px}.dialog-category{font-size:11px;color:#e26370;margin:0 0 7px}.dialog-body h2{font-size:24px;line-height:1.65;margin:0 0 13px}.dialog-body>p:not(.dialog-category){font-size:13px;color:#c7b9bf;line-height:2.3}.dialog-disclaimer{background:#20151a;border-right:2px solid #a4394a;padding:10px 13px;font-size:11px!important;color:#a99aa0!important}.dialog-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.dialog-actions .button{font-size:12px}
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(17px);transition:opacity .65s var(--ease),transform .65s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes orbit{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes radar{to{transform:rotate(360deg)}}
+@keyframes marquee{to{transform:translateX(50%)}}
+/* TABLETS AND MOBILES */
+@media(max-width:1160px){.nav-wrap{gap:15px}.main-nav{gap:18px}.nav-link{font-size:12px}.hero{gap:30px}.hero h1{font-size:clamp(43px,5.2vw,70px)}.hero-art{height:510px}.hero-metrics{gap:15px}.case-grid{gap:16px}.case-content{padding:20px 18px}}
+@media(max-width:900px){.container{width:min(100% - 44px,750px)}.site-header{height:78px}.main-nav{display:none;position:absolute;top:78px;left:0;right:0;border-bottom:1px solid #51303a;background:#130f13;flex-direction:column;align-items:stretch;padding:18px 25px;gap:4px;box-shadow:0 30px 40px #0008}.main-nav.is-open{display:flex}.nav-link{font-size:14px;padding:12px}.nav-link.active:after{display:none}.menu-toggle{display:flex}.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}.nav-cta{margin-inline-start:auto}.hero{grid-template-columns:1fr;padding-top:68px;padding-bottom:68px;gap:46px}.hero-copy{max-width:650px}.hero h1{font-size:clamp(45px,8vw,75px)}.hero-art{height:480px;max-width:680px;width:100%;margin-inline:auto}.scroll-hint{bottom:22px}.section-space{padding-block:85px}.archive-tools{align-items:stretch;flex-direction:column}.search-field{width:100%;flex-basis:44px;max-width:none}.case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.case-content p{min-height:75px}.about-section{gap:40px;grid-template-columns:1fr 1fr}.about-image{min-height:385px}.portrait-ring{width:205px;height:205px}.portrait-ring--two{width:265px;height:265px}.portrait-monogram{font-size:135px}.connect-inner{align-items:start;flex-direction:column;gap:28px}.social-links{justify-content:flex-start}}
+@media(max-width:590px){.container{width:calc(100% - 34px)}.site-header{height:72px}.main-nav{top:72px}.brand-symbol{width:33px;height:33px}.brand-copy b{font-size:14px}.brand-copy small{font-size:7px;letter-spacing:2.8px}.nav-cta{display:none}.hero{padding-top:49px;padding-bottom:57px;gap:35px}.hero-kicker{font-size:9px;margin-top:23px;letter-spacing:3.4px}.eyebrow{font-size:11px}.hero h1{font-size:clamp(39px,9.6vw,59px);letter-spacing:-2.3px;white-space:normal;line-height:1.4;margin-bottom:16px}.hero-description{font-size:13px;line-height:2.25;margin-bottom:24px}.hero-actions{gap:16px}.button{padding:11px 16px;gap:14px;font-size:12px}.text-link{font-size:12px}.hero-metrics{gap:15px;margin-top:38px;flex-wrap:wrap}.hero-metrics strong{font-size:25px}.hero-metrics span:not(.tiny-red-dot){font-size:10px}.metrics-caption{font-size:9px;flex:1 1 105px}.hero-art{height:375px}.orbit--outer{height:325px;width:325px}.orbit--middle{height:267px;width:267px}.orbit--inner{height:200px;width:200px}.radial-ticks{height:350px;width:350px}.art-gate{width:42%;border-width:8px}.art-center-label{font-size:8px;letter-spacing:3px}.art-corner{font-size:8px}.scroll-hint{display:none}.ticker{height:47px}.ticker-track{gap:19px}.ticker-track span{font-size:10px}.section-space{padding-block:71px}.section-heading{margin-bottom:22px}.section-eyebrow{font-size:10px}.section-heading h2,.about-text h2,.connect-inner h2{font-size:34px}.section-serial{font-size:28px}.section-serial span{font-size:16px}.section-subtitle{font-size:12px}.archive-tools{margin-top:28px}.filters{gap:6px}.filter-button{padding:7px 10px;font-size:11px}.case-grid{grid-template-columns:1fr;gap:19px}.case-visual{height:215px}.case-content{padding:20px}.case-content h3{font-size:17px}.case-content p{min-height:0}.sample-note{font-size:10px;text-align:right}.manifesto-inner{padding-block:70px}.manifesto-icon{font-size:95px}.manifesto-inner h2{font-size:clamp(31px,8.2vw,44px)}.manifesto-inner>p:not(.section-eyebrow){font-size:12px}.manifesto-signature{font-size:9px;letter-spacing:2px}.about-section{grid-template-columns:1fr;gap:32px}.about-image{min-height:340px}.about-text>p:not(.section-eyebrow){font-size:13px}.connect-inner{padding-block:52px}.social-links{width:100%}.social-button{flex:1 1 145px}.footer-inner{min-height:145px;flex-direction:column;align-items:start;gap:8px;justify-content:center}.footer-inner p{font-size:11px}.dialog-body{padding:25px 20px}.dialog-body h2{font-size:21px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+</style>
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="MAHDIMISER، بازگشت به صفحه اصلی">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-copy"><b>MAHDIMISER</b><small>THE DARK ARCHIVE</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="ناوبری اصلی">
+        <a class="nav-link active" href="#home">خانه</a>
+        <a class="nav-link" href="#archive">آرشیو پرونده‌ها</a>
+        <a class="nav-link" href="#about">درباره مهدی</a>
+        <a class="nav-link" href="#connect">ارتباط</a>
+      </nav>
+      <a class="nav-cta" href="#archive"><span>ورود به آرشیو</span><span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> پروندهٔ شمارهٔ ۰۰۱ <span class="eyebrow-separator">/</span> آغاز ورود</div>
+        <p class="hero-kicker">BEYOND THE KNOWN</p>
+        <h1 id="hero-heading">به <span class="outlined-word">دنیای</span><br><em>تاریک</em> خوش اومدی<span class="hero-period">.</span></h1>
+        <p class="hero-description" id="hero-description">افسانه‌های فراموش‌شده، پرونده‌های بی‌پاسخ و مکان‌هایی که هنوز قصه‌ای برای گفتن دارند. اینجا هر در بسته، شروع یک روایت تازه‌ست.</p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#archive"><span>کاوش در پرونده‌ها</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+          <a class="text-link" href="#about">این جهان رو بشناس <span aria-hidden="true">↙</span></a>
+        </div>
+        <div class="hero-metrics" aria-label="اطلاعات آرشیو">
+          <div><strong id="case-count">۰۶</strong><span>پروندهٔ نمونه</span></div>
+          <span class="metric-rule" aria-hidden="true"></span>
+          <div><strong id="category-count">۰۴</strong><span>شاخهٔ متفاوت</span></div>
+          <span class="metric-rule" aria-hidden="true"></span>
+          <div class="metrics-caption"><span class="tiny-red-dot"></span> آرشیو در حال شکل‌گیری</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="گرافیک تزئینی با دروازه‌ای سرخ در دل تاریکی" role="img">
+        <div class="art-corner art-corner--tl">M / 001<br>UNKNOWN SIGNAL</div>
+        <div class="art-corner art-corner--tr">35° 41′ N<br>51° 25′ E</div>
+        <div class="art-corner art-corner--bl">ARCHIVE / 01</div>
+        <div class="art-corner art-corner--br">REC ●</div>
+        <div class="orbit orbit--outer"></div><div class="orbit orbit--middle"></div><div class="orbit orbit--inner"></div>
+        <div class="radial-ticks"></div>
+        <div class="art-halo"></div>
+        <div class="art-gate"><div class="gate-light"></div><div class="gate-core"></div></div>
+        <div class="art-ground"></div>
+        <div class="art-horizon"></div>
+        <div class="art-line art-line--one"></div><div class="art-line art-line--two"></div>
+        <span class="art-center-label">DO NOT LOOK BACK</span>
+        <div class="art-bottom"><span>NO SIGNAL FOUND</span><span>00:00:00:01</span></div>
+      </div>
+      <div class="scroll-hint"><span class="scroll-line"></span><span>برای کشف بیشتر اسکرول کن</span></div>
+    </section>
+
+    <section class="ticker" aria-label="موضوع‌های آرشیو"><div class="ticker-track" aria-hidden="true">
+      <span>افسانه‌ها</span><i>✦</i><span>رازهای حل‌نشده</span><i>✦</i><span>مکان‌های ممنوعه</span><i>✦</i><span>پرونده‌های ماورایی</span><i>✦</i><span>پدیده‌های عجیب</span><i>✦</i><span>افسانه‌ها</span><i>✦</i><span>رازهای حل‌نشده</span><i>✦</i><span>مکان‌های ممنوعه</span><i>✦</i><span>پرونده‌های ماورایی</span><i>✦</i><span>پدیده‌های عجیب</span><i>✦</i>
+    </div></section>
+
+    <section class="archive-section container section-space" id="archive" aria-labelledby="archive-heading">
+      <div class="section-heading reveal">
+        <div><p class="section-eyebrow"><span>01</span> / THE ARCHIVE</p><h2 id="archive-heading">آرشیو <em>تاریکی</em></h2><p class="section-subtitle">از افسانه‌های کهن تا پرونده‌هایی که هنوز سؤال‌برانگیزند.</p></div>
+        <div class="section-serial" aria-hidden="true">DARK<br>FILES<span>↘</span></div>
+      </div>
+      <div class="archive-tools reveal">
+        <div class="filters" id="filters" role="group" aria-label="فیلتر دسته‌بندی پرونده‌ها"></div>
+        <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">جست‌وجو در پرونده‌ها</span><input id="search-input" type="search" placeholder="جست‌وجو در تاریکی..." autocomplete="off"></label>
+      </div>
+      <p class="archive-status" id="archive-status" role="status" aria-live="polite">در حال بارگذاری آرشیو...</p>
+      <div class="case-grid" id="case-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><div class="empty-mark">∅</div><h3>پرونده‌ای پیدا نشد</h3><p>عبارت دیگه‌ای جست‌وجو کن یا فیلترها رو تغییر بده.</p><button class="button button--outline" id="reset-filters" type="button">نمایش همه پرونده‌ها</button></div>
+      <p class="sample-note"><span aria-hidden="true">※</span> این پرونده‌ها برای نمایش ساختار نسخهٔ اولیه قرار گرفته‌اند؛ متن و لینک هرکدام قابل ویرایش است.</p>
+    </section>
+
+    <section class="manifesto-section" aria-labelledby="manifesto-heading"><div class="container manifesto-inner reveal">
+      <div class="manifesto-icon" aria-hidden="true">“</div>
+      <p class="section-eyebrow"><span>02</span> / THE MANIFESTO</p>
+      <h2 id="manifesto-heading">«اینجا، هیچ تاریکی<br><em>بی‌دلیل نیست.</em>»</h2>
+      <p>هر داستان، ردپایی داره. بعضی ردپاها به واقعیت می‌رسن، بعضی به باور و افسانه؛ اما همه‌شون ارزش شنیده‌شدن دارن.</p>
+      <div class="manifesto-signature">MAHDIMISER <span>✕</span> THE DARK WORLD</div>
+    </div></section>
+
+    <section class="about-section container section-space" id="about" aria-labelledby="about-heading">
+      <div class="about-image reveal" aria-hidden="true"><div class="portrait-ring portrait-ring--one"></div><div class="portrait-ring portrait-ring--two"></div><span class="portrait-monogram">M<span>.</span></span><span class="portrait-caption">THE VOICE BEHIND THE DARK</span><span class="portrait-cross">+</span></div>
+      <div class="about-text reveal"><p class="section-eyebrow"><span>03</span> / THE CREATOR</p><h2 id="about-heading">من <em>مهدی مایزرم.</em></h2><p>راوی داستان‌هایی از گوشه‌های تاریک تاریخ، افسانه‌ها و ناشناخته‌ها. اینجا قراره سراغ سؤال‌هایی بریم که جواب‌دادن بهشون همیشه آسون نیست.</p><p>MAHDIMISER فقط یک آرشیو نیست؛ دعوتیه برای کنجکاوی، شنیدن روایت‌های متفاوت و نگاه‌کردن به چیزهایی که معمولاً از کنارشون رد می‌شیم.</p><a class="text-link about-link" href="#connect">ارتباط با من <span aria-hidden="true">↙</span></a></div>
+    </section>
+
+    <section class="connect-section" id="connect" aria-labelledby="connect-heading"><div class="container connect-inner reveal">
+      <div><p class="section-eyebrow"><span>04</span> / STAY CONNECTED</p><h2 id="connect-heading">هنوز اول <em>راهیم.</em></h2><p>رد دنیای تاریک رو گم نکن. برای دیدن ویدیوهای تازه، از راه‌های رسمی همراه شو.</p></div>
+      <div class="social-links" id="social-links"><div class="social-pending">لینک‌های رسمی پس از افزودن آدرس‌ها اینجا نمایش داده می‌شن.</div></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span class="brand-symbol brand-symbol--small" aria-hidden="true"><span></span></span><span>MAHDIMISER <small>/ دنیای تاریک</small></span></div><p>تا داستان بعدی… چراغ‌ها رو روشن بذار.</p><span class="footer-copy">© <span id="year">2026</span> MAHDIMISER</span></div></footer>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span class="dialog-overline">CLASSIFIED / THE DARK ARCHIVE</span><button class="dialog-close" id="dialog-close" type="button" aria-label="بستن جزئیات">×</button></div>
+    <div class="dialog-visual" id="dialog-visual"><span class="dialog-visual-icon" id="dialog-icon"></span></div>
+    <div class="dialog-body"><p class="dialog-category" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-summary"></p><p class="dialog-disclaimer" id="dialog-disclaimer"></p><div class="dialog-actions" id="dialog-actions"></div></div>
+  </dialog>
+<script>
+/*
+ * MAHDIMISER — همهٔ متن‌ها، لینک‌ها و پرونده‌های قابل‌ویرایش اینجاست.
+ * برای اضافه‌کردن ویدیو، youtubeUrl همان پرونده را با لینک کامل https پر کن.
+ * این داده‌ها نسخهٔ نمونه‌اند و تا زمان تأیید، محتوای نهایی کانال محسوب نمی‌شوند.
+ */
+window.MAHDIMISER_DATA = {
+  heroDescription: "افسانه‌های فراموش‌شده، پرونده‌های بی‌پاسخ و مکان‌هایی که هنوز قصه‌ای برای گفتن دارند. اینجا هر در بسته، شروع یک روایت تازه‌ست.",
+  youtubeUrl: "", // مثال: https://www.youtube.com/@YOUR_HANDLE
+  instagramUrl: "", // مثال: https://www.instagram.com/YOUR_ID/
+  contactEmail: "", // اختیاری: example@domain.com
+  categories: [
+    { id: "all", label: "همه پرونده‌ها" },
+    { id: "mystery", label: "پرونده‌های مرموز" },
+    { id: "legend", label: "افسانه‌ها" },
+    { id: "places", label: "مکان‌های عجیب" },
+    { id: "phenomenon", label: "پدیده‌ها" }
+  ],
+  cases: [
+    {
+      id: "flight-19",
+      title: "پرواز ۱۹؛ ناپدیدشدن در آسمان",
+      category: "mystery",
+      label: "پروندهٔ تاریخی",
+      number: "001",
+      art: "plane",
+      teaser: "پنج هواپیمای آموزشی که در سال ۱۹۴۵ ناپدید شدند؛ ماجرایی که بعدها با افسانه‌های مثلث برمودا گره خورد.",
+      summary: "پرواز ۱۹ نام گروهی از پنج هواپیمای نیروی دریایی آمریکا بود که در دسامبر ۱۹۴۵ حین یک مأموریت آموزشی ناپدید شدند. روایت‌های متعدد دربارهٔ این حادثه ساخته شده است. در نسخهٔ نهایی، زمان‌بندی حادثه، گزارش‌های رسمی و ادعاهای عامه‌پسند را جداگانه بررسی کن.",
+      note: "این معرفی نمونه است؛ پیش از انتشار، متن و منابع را بازبینی کن.",
+      youtubeUrl: ""
+    },
+    {
+      id: "enfield",
+      title: "تسخیر انفیلد؛ صداهایی در خانه",
+      category: "mystery",
+      label: "ادعای ماورایی",
+      number: "002",
+      art: "house",
+      teaser: "یکی از مشهورترین پرونده‌های ادعای فعالیت‌های غیرعادی در خانه‌ای واقع در لندن.",
+      summary: "داستان انفیلد به رخدادهای ادعاشده در خانه‌ای در شمال لندن در اواخر دههٔ ۱۹۷۰ بازمی‌گردد. شاهدان و پژوهشگران برداشت‌های متفاوتی داشتند و تردیدهای جدی نیز دربارهٔ برخی وقایع مطرح شده است. روایت و شواهد را از هم جدا نگه دار.",
+      note: "موضوع شامل ادعاهای مورد اختلاف است؛ نتیجهٔ قطعی برای آن در نظر نگیر.",
+      youtubeUrl: ""
+    },
+    {
+      id: "doll-island",
+      title: "جزیرهٔ عروسک‌ها؛ چشم‌هایی در میان درختان",
+      category: "places",
+      label: "مکان عجیب",
+      number: "003",
+      art: "doll",
+      teaser: "جزیره‌ای در آبراه‌های خوچیمیلکوی مکزیک که با عروسک‌های آویخته‌اش شناخته می‌شود.",
+      summary: "جزیرهٔ عروسک‌ها در منطقهٔ خوچیمیلکو در مکزیکوسیتی به دلیل مجموعه‌ای از عروسک‌های قدیمی شناخته شده است. روایت‌های فولکلور متعددی دربارهٔ منشأ آن وجود دارد و جزئیات افسانه‌ها لزوماً مستند نیست.",
+      note: "داستان‌های شفاهی پیرامون مکان را از اطلاعات جغرافیایی تفکیک کن.",
+      youtubeUrl: ""
+    },
+    {
+      id: "opium-bird",
+      title: "پرندهٔ تریاک؛ زمزمهٔ سال ۲۰۲۷",
+      category: "phenomenon",
+      label: "پدیدهٔ اینترنتی",
+      number: "004",
+      art: "bird",
+      teaser: "موجودی پرنده‌مانند در تصاویر برفی؛ یک میم اینترنتی و روایت‌های رازآلودی که اطرافش شکل گرفت.",
+      summary: "تصویرهای پرندهٔ تریاک در فضای آنلاین به یک میم اینترنتی تبدیل شدند. برخی بازنشرها داستان‌هایی دربارهٔ سال ۲۰۲۷ به آن نسبت می‌دهند. پیوند دادن این روایت‌ها به وقایع واقعی نیازمند مدرک مستقل است. این صفحه محل معرفی ویدیو و منابع نهایی خواهد بود.",
+      note: "این پرونده یک میم و روایت اینترنتی را بررسی می‌کند، نه پیشگویی اثبات‌شده.",
+      youtubeUrl: ""
+    },
+    {
+      id: "persian-demons",
+      title: "پنج دیو ایرانی؛ چهره‌های افسانه",
+      category: "legend",
+      label: "اسطوره و افسانه",
+      number: "005",
+      art: "mask",
+      teaser: "از دیو سپید تا اکوان؛ شخصیت‌هایی از روایت‌های اساطیری و حماسی ایران.",
+      summary: "در ادبیات و فرهنگ روایی ایران، دیوها در داستان‌های مختلف صورت‌ها و نقش‌های متفاوت دارند. از دیو سپید و اکوان دیو تا دیگر چهره‌های شاهنامه، می‌توان ردِ تخیل حماسی و باورهای کهن را دنبال کرد.",
+      note: "این موضوع در حوزهٔ اسطوره و روایت ادبی قرار می‌گیرد.",
+      youtubeUrl: ""
+    },
+    {
+      id: "mary-celeste",
+      title: "مری سلست؛ کشتیِ بی‌سرنشین",
+      category: "mystery",
+      label: "معمای دریایی",
+      number: "006",
+      art: "ship",
+      teaser: "کشتی‌ای که در سال ۱۸۷۲ در دریا پیدا شد؛ اما سرنشینانش دیگر روی عرشه نبودند.",
+      summary: "مری سلست کشتی تجاری‌ای بود که در دسامبر ۱۸۷۲ بدون خدمه در اقیانوس اطلس پیدا شد. سرنوشت افراد آن مشخص نشد و همین خلأ تاریخی بعدها زمینهٔ داستان‌های تخیلی و روایت‌های اغراق‌آمیز شد.",
+      note: "اطلاعات تاریخی، فرضیه‌ها و روایت‌های عامه‌پسند را جداگانه بررسی کن.",
+      youtubeUrl: ""
+    }
+  ]
+};
+
+</script>
+<script>
+(() => {
+  "use strict";
+  const data = window.MAHDIMISER_DATA;
+  if (!data || !Array.isArray(data.cases)) {
+    document.getElementById("archive-status").textContent = "اطلاعات آرشیو در دسترس نیست. فایل site-data.js را بررسی کن.";
+    return;
+  }
+
+  const $ = (selector) => document.querySelector(selector);
+  const grid = $("#case-grid");
+  const filters = $("#filters");
+  const input = $("#search-input");
+  const count = $("#archive-status");
+  const empty = $("#empty-state");
+  const dialog = $("#case-dialog");
+  let activeCategory = "all";
+  let previouslyFocused = null;
+
+  function escapeHtml(str) {
+    return String(str ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));
+  }
+  function safeWebUrl(url) {
+    if (!url) return "";
+    try { const u = new URL(url); return ["https:","http:"].includes(u.protocol) ? u.href : ""; } catch { return ""; }
+  }
+  const format = n => Number(n).toLocaleString("fa-IR");
+  const normalize = str => String(str || "").toLowerCase().normalize("NFKC").replace(/[يى]/g,"ی").replace(/ك/g,"ک").replace(/\u200c/g," ").trim();
+
+  const icons = {
+    plane: '<path d="m17 68 99-31-44 50-1 27-21-23-22 5 13-22Z"/><path d="m50 91 14-29 52-25M71 87 93 66M35 68l16 8"/>',
+    house: '<path d="M19 68 67 28l48 40v50H19Z"/><path d="M52 117V83h30v34M34 76h13v14H34zM87 76h13v14H87z"/><path d="m23 52 44-36 44 36M67 28v25M62 58h10"/>',
+    doll: '<circle cx="67" cy="49" r="27"/><path d="M48 42h6m26 0h6M51 62q16 15 32 0M39 35 27 22m69 13 11-13M52 77l-8 33m38-33 8 33m-46 0 24 12 22-12M57 91h20"/><path d="m44 19 4-10m38 10 4-10M60 53l2 2m10-2 2 2"/>',
+    bird: '<path d="M50 112V73L35 47 52 21 79 18l19 18-17 19-10 17 10 40"/><path d="M52 21 33 14M79 18 98 12M48 33 28 28 42 47M54 58h5m15-24h4M34 91 16 107m68-16 23 16M55 74h21"/><path d="m62 54 6 3-5 4"/>',
+    mask: '<path d="M67 17c-30 0-46 19-43 48 3 23 15 42 43 56 28-14 40-33 43-56 3-29-13-48-43-48Z"/><path d="M33 56 53 48l10 11-11 10-19-2Zm68 0-20-8-10 11 11 10 19-2ZM59 87l8-12 8 12M52 97q15 9 30 0"/>',
+    ship: '<path d="M15 91h105l-20 29H36L15 91ZM67 15v76M69 26l34 48H69V26ZM61 38 34 78h27V38ZM27 85h84M15 126q13-7 26 0t26 0 26 0 26 0"/>',
+    default: '<circle cx="67" cy="67" r="48"/><path d="M67 25v58M47 67l20 16 20-16"/>'
+  };
+  const svgFor = key => `<svg viewBox="0 0 134 134" aria-hidden="true" focusable="false">${icons[key] || icons.default}</svg>`;
+  const gradients = {
+    plane: ["linear-gradient(135deg,#11212a,#0b1019 45%,#3a1623)","#de516d55"],
+    house: ["linear-gradient(140deg,#231923,#101018 60%,#4b1727)","#e1507555"],
+    doll: ["linear-gradient(135deg,#312116,#0e1016 65%,#5b182a)","#d95b7255"],
+    bird: ["linear-gradient(135deg,#102332,#0b1119 45%,#4b1726)","#e15f6d66"],
+    mask: ["linear-gradient(125deg,#2a1219,#140e17 60%,#4a1c2b)","#ff4c6855"],
+    ship: ["linear-gradient(130deg,#0f2630,#11121a 65%,#3e1522)","#e15b7055"]
+  };
+  const categoryNames = Object.fromEntries((data.categories || []).map(c => [c.id,c.label]));
+
+  function createFilters() {
+    filters.innerHTML = "";
+    (data.categories || []).forEach(cat => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "filter-button";
+      btn.textContent = cat.label;
+      btn.dataset.category = cat.id;
+      btn.setAttribute("aria-pressed", String(cat.id === activeCategory));
+      btn.addEventListener("click", () => {
+        activeCategory = cat.id;
+        filters.querySelectorAll("button").forEach(el => el.setAttribute("aria-pressed", String(el.dataset.category === activeCategory)));
+        drawCases();
+      });
+      filters.append(btn);
+    });
+  }
+  function cardMarkup(item) {
+    const gradient = gradients[item.art] || gradients.mask;
+    const title = escapeHtml(item.title);
+    return `<article class="case-card">
+      <div class="case-visual" style="--card-gradient:${gradient[0]};--card-glow:${gradient[1]}">
+        <div class="case-visual-grid"></div><span class="case-icon">${svgFor(item.art)}</span>
+        <span class="case-num">FILE / ${escapeHtml(item.number)}</span><span class="case-type">${escapeHtml(item.label)}</span>
+      </div><div class="case-content"><div class="case-meta">MAHDIMISER / ${escapeHtml(item.number)}</div>
+      <h3>${title}</h3><p>${escapeHtml(item.teaser)}</p>
+      <button type="button" class="case-open" data-case="${escapeHtml(item.id)}" aria-label="مشاهده جزئیات ${title}">ورود به پرونده <span aria-hidden="true">←</span></button>
+      </div></article>`;
+  }
+  function drawCases() {
+    const query = normalize(input.value);
+    const displayed = data.cases.filter(c => {
+      if (activeCategory !== "all" && c.category !== activeCategory) return false;
+      return !query || normalize([c.title,c.teaser,c.label,c.summary].join(" ")).includes(query);
+    });
+    grid.innerHTML = displayed.map(cardMarkup).join("");
+    empty.hidden = displayed.length !== 0;
+    count.textContent = `${format(displayed.length)} پرونده از ${format(data.cases.length)} پروندهٔ نمونه`;
+    grid.querySelectorAll("[data-case]").forEach(btn => btn.addEventListener("click", () => openCase(btn.dataset.case)));
+  }
+  function openCase(id) {
+    const item = data.cases.find(c => c.id === id);
+    if (!item) return;
+    previouslyFocused = document.activeElement;
+    $("#dialog-title").textContent = item.title;
+    $("#dialog-category").textContent = `${categoryNames[item.category] || item.category} / FILE ${item.number}`;
+    $("#dialog-summary").textContent = item.summary;
+    $("#dialog-disclaimer").textContent = item.note || "این متن معرفی قابل‌ویرایش است.";
+    $("#dialog-icon").innerHTML = svgFor(item.art);
+    const gradient = gradients[item.art] || gradients.mask;
+    $("#dialog-visual").style.background = gradient[0];
+    const actions = $("#dialog-actions");
+    actions.innerHTML = "";
+    const url = safeWebUrl(item.youtubeUrl);
+    if (url) {
+      const a = document.createElement("a");
+      a.href = url; a.target="_blank"; a.rel="noopener noreferrer";
+      a.className = "button button--primary"; a.textContent = "تماشای ویدیو ↗";
+      actions.append(a);
+    } else {
+      const notice = document.createElement("span");
+      notice.className = "dialog-category";
+      notice.textContent = "لینک ویدیوی این پرونده هنوز اضافه نشده است.";
+      actions.append(notice);
+    }
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open","");
+  }
+
+  function setupSocials() {
+    const social = $("#social-links");
+    const entries = [
+      ["YouTube",data.youtubeUrl,"یوتیوب"],
+      ["Instagram",data.instagramUrl,"اینستاگرام"]
+    ];
+    const email = String(data.contactEmail || "").trim();
+    social.innerHTML = "";
+    for (const [eng,url,label] of entries) {
+      const safe = safeWebUrl(url);
+      if (!safe) continue;
+      const link = document.createElement("a");
+      link.className="social-button";link.href=safe;link.target="_blank";link.rel="noopener noreferrer";
+      link.innerHTML=`<b>${eng}</b><span>${label} ↗</span>`;
+      social.append(link);
+    }
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      const a=document.createElement("a");a.className="social-button";a.href=`mailto:${encodeURIComponent(email).replace('%40','@')}`;
+      a.innerHTML="<b>Email</b><span>ایمیل ↗</span>";social.append(a);
+    }
+    if (!social.children.length) {
+      const notice=document.createElement("div");notice.className="social-pending";
+      notice.textContent="لینک‌های رسمی پس از افزودن آدرس‌ها اینجا نمایش داده می‌شن.";
+      social.append(notice);
+    }
+  }
+  function setupNavigation() {
+    const button = $(".menu-toggle");
+    const nav = $("#main-nav");
+    function toggle(open) {
+      nav.classList.toggle("is-open",open);
+      button.setAttribute("aria-expanded",String(open));
+      button.setAttribute("aria-label",open?"بستن منو":"باز کردن منو");
+    }
+    button.addEventListener("click", () => toggle(button.getAttribute("aria-expanded") !== "true"));
+    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => toggle(false)));
+    document.addEventListener("keydown",e => { if(e.key==="Escape") toggle(false); });
+    document.addEventListener("click",e => { if (!nav.contains(e.target) && !button.contains(e.target)) toggle(false); });
+    const navLinks=[...nav.querySelectorAll(".nav-link")];
+    if ("IntersectionObserver" in window) {
+      const observer=new IntersectionObserver(entries=>{
+        for(const entry of entries) if(entry.isIntersecting){
+          navLinks.forEach(link=>link.classList.toggle("active",link.hash==="#"+entry.target.id));
+        }
+      },{rootMargin:"-20% 0px -65% 0px",threshold:0});
+      ["archive","about","connect"].forEach(id=>{const section=document.getElementById(id);if(section)observer.observe(section);});
+    }
+  }
+  function setupReveal() {
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll(".reveal").forEach(el=>el.classList.add("visible"));return;
+    }
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
+    }),{threshold:.09});
+    document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+  }
+
+  if (typeof data.heroDescription === "string" && data.heroDescription.trim()) $("#hero-description").textContent=data.heroDescription;
+  $("#case-count").textContent=format(data.cases.length).padStart(2,"۰");
+  $("#category-count").textContent=format((data.categories||[]).filter(c=>c.id!=="all").length).padStart(2,"۰");
+  $("#year").textContent=String(new Date().getFullYear());
+  createFilters();drawCases();setupSocials();setupNavigation();setupReveal();
+  input.addEventListener("input",drawCases);
+  $("#reset-filters").addEventListener("click",()=>{
+    activeCategory="all";input.value="";filters.querySelectorAll("button").forEach(el=>el.setAttribute("aria-pressed",String(el.dataset.category==="all")));drawCases();input.focus();
+  });
+  $("#dialog-close").addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});
+  dialog.addEventListener("close",()=>{if(previouslyFocused && previouslyFocused.isConnected)previouslyFocused.focus();});
+})();
+
+</script>
+</body>
+</html>
